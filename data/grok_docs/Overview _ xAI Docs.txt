@@ -1,0 +1,119 @@
+Documentation	Cookbook
+
+
+
+Getting started
+Welcome
+Welcome to the xAI developer docs! Our API makes it easy to harness Grok's intelligence in your projects. Grok is our flagship AI model designed to deliver truthful, insightful answers.
+
+
+
+
+Featured models
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GROK 3
+
+
+
+
+
+
+
+
+
+Grok 3
+Our flagship model with deep domain knowledge.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GROK 3 MINI
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Grok 3 Mini (with Thinking)
+Our lightweight model that thinks before responding.
+
+
+
+
+Jump right in
+
+
+
+
+
+
+Quickstart
+Create an API Key and make your first request.
+
+
+
+
+
+
+Tool Use
+Let Grok perform actions and look up information.
+
+
+
+
+
+
+Images
+Use Grok to analyze images or perform OCR.
+
+
+
+
+
+Are you a non-developer or simply looking for our consumer services? Visit Grok.com or download one of the iOS or Android apps. See our Comparison Table for the differences.
+
+
+
+
+Questions and feedback
+
+If you have any questions or feedback, feel free to email us at support@x.ai. Happy Grokking! ??

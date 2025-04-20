@@ -1,0 +1,33 @@
+Documentation	Cookbook
+
+
+
+Guides
+Streaming Response
+Streaming outputs is supported by all models with text output capability (Chat, Image Understanding, etc.). It is not supported by models with image output capability (Image Generation).
+
+Streaming outputs uses Server-Sent Events (SSE) that let the server send back the delta of content in event streams.
+
+Streaming responses are beneficial for providing real-time feedback, enhancing user interaction by allowing text to be displayed as it's generated.
+
+
+To enable streaming, you must set
+
+
+"stream": true
+
+
+in your request:
+
+
+
+
+You'll get the event streams like these:
+
+
+
+
+It is recommended that you use a client SDK to parse the event stream.
+
+Example streaming responses in Python/Javascript:
+

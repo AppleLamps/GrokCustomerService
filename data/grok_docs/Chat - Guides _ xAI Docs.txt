@@ -1,0 +1,106 @@
+Documentation	Cookbook
+
+
+
+Guides
+Chat
+Text in, text out. Chat is the most popular feature on the xAI API, and can be used for anything from summarizing articles, generating creative writing, answering questions, providing customer support, to assisting with coding tasks.
+
+
+
+
+Prerequisites
+
+xAI Account: You need an xAI account to access the API.
+API Key: Ensure that your API key has access to the chat endpoint and the chat model is enabled.
+
+If you don't have these and are unsure of how to create one, follow the Hitchhiker's Guide to Grok. You can create an API key on the xAI Console API Keys Page.
+Set your API key in your environment:
+
+
+
+
+
+A Basic Chat Completions Example
+
+You can also stream the response, which is covered in Streaming Response.
+
+The user sends a request to the xAI API endpoint. The API processes this and returns a complete response.
+
+
+
+
+Response:
+
+
+
+
+
+Conversations
+
+The xAI API is stateless and does not process new request with the context of your previous request history.
+
+However, you can provide previous chat generation prompts and results to a new chat generation request to let the model process your new request with the context in mind.
+
+An example message:
+
+
+
+By specifying roles, you can change how the the model ingest the content. The
+
+
+system
+
+role content
+
+should define, in an instructive tone, the way the model should respond to user request. The
+
+
+user
+
+role content is usually used for user request or data sent to the model. The
+
+
+assistant
+
+role content is
+
+usually either in the model's response, or when sent within the prompt, indicating the model's response as part of conversation history.
+
+
+This strategy to send
+
+
+assistant
+
+
+role content can be used within function calling, in which the model
+
+response will invoke a tool call, the user's program responds to the tool call and continues the conversation by appending tool call result to the message. For more details, check out our guide on Function Calling.
+
+
+
+Message role order flexibility
+
+Unlike some models from other providers, one of the unique aspects of xAI API is its flexibility with message roles:
+
+
+No Order Limitation: You can mix conversation context.
+
+
+system ,
+
+
+user , or
+
+
+assistant
+
+
+roles in any sequence for your
+
+
+Example 1 - Multiple System Messages:
+
+The model takes multiple system Example 2 - User Messages First:
+

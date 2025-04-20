@@ -1,0 +1,129 @@
+Documentation	Cookbook
+
+
+
+Getting Started
+Frequently Asked Questions
+Frequently asked questions by our customers.
+
+
+
+
+
+Does xAI train on customers' API requests?
+
+
+API requests and responses are temporarily stored on our servers for 30 days in case they need to be audited for potential abuse or misuse. This data is automatically deleted after 30 days.
+
+
+
+
+Does the xAI API provide access to live data?
+No, the xAI API uses only the core Grok model and does not include real-time data from X posts, the internet, or current events. This differs from the Grok experience on X.com, which can leverage such data. To give Grok access to real-time or external data, please see our Function Calling guide.
+
+
+
+
+How do I contact Sales?
+For customers with bespoke needs or to request custom pricing, please fill out our Grok for Business form. A member of our team will reach out with next steps.
+
+
+
+
+Is the xAI API HIPAA compliant?
+To inquire about a Business Associate Agreement (BAA), please complete our BAA Questionnaire. A member of our team will review your responses and reach out with next steps.
+
+
+
+
+Are you GDPR and SOC II compliant?
+Please refer to our Trust Center for up-to-date information on our certifications and data governance.
+
+
+
+Where are your Terms of Service and Privacy Policy?
+Please refer to our Legal Resources for all legal-related inquiries.
+
+
+
+
+Does xAI sell crypto tokens?
+xAI is not affiliated with any cryptocurrency. We are aware of several scam websites that unlawfully use our name and logo.
+
+
+
+
+I have issues using X, can I reach out to xAI for help?
+While xAI provides the Grok in X service on X.com and X apps, it does not have operational oversight of X's service. You can contact X via their Help Center or message @premium on X.
+
+
+
+
+How do I add X account as a sign-in method or link my X subscription?
+
+
+If you don't have an xAI account, signing up with X account will automatically link your X account subscription status with X.
+
+If you have an xAI account without X as a sign-in method, please follow the steps outlined here: How can I link my X account sign-in/subscription to my xAI account?
+
+
+
+
+I signed-up to Grok / xAI API with my X account, why is xAI still asking for my email?
+When you sign up with X, you will be prompted with the following:
+
+
+As X does not provide the email address, you can have different emails on your X account and xAI account.
+
+
+
+
+
+
+I received an email of someone logging into my xAI account
+xAI will send an email to you when someone logs into your xAI account. The login location is an approximation based on your IP address, which is dependent on your network setup and ISP and might not reflect exactly where the login happened.
+
+If you think the login is not you, please reset your password and clear your login sessions. We also recommend all users to add a multi-factor authentication method.
+
+
+
+
+My prompt token consumption from the API is different from the token count I get from xAI Console Tokenizer or tokenize text endpoint
+The inference endpoints add pre-defined tokens to help us process the request. Therefore, these tokens would be added to the total prompt token consumption. For more information, see: Estimating consumption with tokenizer on xAI Console or Estimating consumption with tokenizer on xAI Console or through API.
+
+
+
+
+How do I delete my account?
+We are sorry to see you go!
+
+You can visit xAI Accounts to delete your account. You can restore your account after log in again and confirming restoration within 30 days.
+
+
+
+
+I'm having payment issues with an Indian payment card
+Unfortunately we cannot process Indian payment cards for our API service. We are working toward supporting it but you might want to consider using third-party API in the mean time. As Grok Website and Apps' payments are handled differently, those are not being affected.
+
+
+
+
+When will I be charged?
+
+Prepaid Credits: If you choose to use prepaid credits, you'll be charged when you buy them. These credits will be assigned to the team you select during purchase.
+
+Monthly Invoiced Billing: If you set your invoiced spending limit above $0, any usage beyond your prepaid credits will be charged at the end of the month.
+
+API Usage: When you make API requests, the cost is calculated immediately. The amount is either deducted from your available prepaid credits or added to your monthly invoice if credits are exhausted.
+
+If you change your invoiced spending limit to be greater than $0, you will be charged at the end of the month for any extra consumption after your prepaid credit on the team has run out.
+
+Your API consumption will be calculated when making the requests, and the corresponding amount will be deducted from your remaining credits or added to your monthly invoice.
+
+Check out Billing for more information.
+
+
+
+
+Can prepaid API credits be refunded?
+Unfortunately, we are not able to offer refunds on any prepaid credit purchase.

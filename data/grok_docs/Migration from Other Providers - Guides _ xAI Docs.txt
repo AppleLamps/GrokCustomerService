@@ -1,0 +1,29 @@
+Documentation	Cookbook
+
+
+
+Guides
+Migration from Other Providers
+Some of Grok users might have migrated from other LLM providers. xAI API is designed to be compatible with both OpenAI and Anthropic SDKs, except certain capabilities not offered by respective SDK. If you can use either SDKs, we recommend using OpenAI SDK for better stability.
+
+In two steps:
+
+
+1. At API client object construction, you need to set the "base url" to "API key" to your xAI API key (obtained from xAI Console).
+
+
+https://api.x.ai/v1
+
+and
+
+2. When sending message for inference, set "model" to be one of the Grok model names.
+
+If you use third-party tools such as LangChain (JavaScript/Python) and Continue, they usually have a common base class for LLM providers. You only need to change the provider and API keys. You can refer to their documentations for case-by-case instrcutions.
+
+Examples using OpenAI and Anthropic SDKs:
+
+OpenAI SDK
+
+
+Anthropic SDK
+

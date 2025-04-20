@@ -1,0 +1,86 @@
+Documentation	Cookbook
+
+
+
+Guides
+Reasoning
+Grok 3 Mini is a lightweight, smaller thinking model. Unlike traditional models that generate answers immediately, Grok 3 Mini thinks before responding. It's ideal for reasoning-heavy tasks that don't demand extensive domain knowledge, and shines in math-specific and quantitative use cases, such as solving challenging puzzles or math problems.
+
+
+
+Key Features
+
+Think Before Responding: Thinks through problems step-by-step before delivering an answer. Math & Quantitative Strength: Excels at numerical challenges and logic puzzles.
+
+Reasoning Trace: The model's thoughts are available via the response completion object (see example below).
+
+reasoning_content
+
+field in the
+
+
+
+
+
+Control how hard the model thinks
+
+
+The
+
+
+reasoning_effort
+
+parameter controls how much time the model spends thinking before
+
+responding. It must be set to one of these values:
+
+low : Minimal thinking time, using fewer tokens for quick responses.
+high : Maximum thinking time, leveraging more tokens for complex problems.
+
+
+Choosing the right level depends on your task: use
+
+
+low
+
+for simple queries that should complete
+
+quickly, and
+
+
+high
+
+for harder problems where response latency is less important.
+
+
+
+Usage Example
+
+Here's a simple example using Grok 3 Mini to multiply 101 by 3. Notice that we can access both the reasoning content and final response.
+
+
+
+
+
+Sample Output
+
+
+
+When to Use Reasoning
+
+
+Use
+
+grok-3-mini-beta or
+
+grok-3-mini-fast-beta : For tasks that can benefit from logical
+
+reasoning (such as meeting scheduling or math problems). Also great for tasks that don't require deep domain knowledge about a specific subject (eg basic customer support bot).
+
+Use
+
+grok-3-beta or
+
+grok-3-fast-beta : For queries requiring deep domain expertise or world
+
+knowledge (eg healthcare, legal, finance).

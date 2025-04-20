@@ -1,0 +1,36 @@
+Documentation	Cookbook
+
+
+
+Getting Started
+Get $150 in free API credits each month
+xAI is offering $150 per month in free API credits for teams that opt in to data sharing (available in eligible countries*). By opting in, you agree to share your API requests with xAI.
+
+To qualify for free credits, your team must have already spent a minimum of $5 on the API before choosing to opt in.
+
+
+How it works
+
+
+Data sharing is set at the team level.
+You can have multiple teams-some opted in, others not. Only team admins can enable data sharing.
+To opt in, go to the Credits Section on the xAI API Console Billing page. After a team has chosen to opt-in to data sharing, the team cannot opt-out.
+
+
+
+To check if you're eligible to participate in the free credits program, go to the cloud console:
+
+
+
+
+
+Country Eligibility
+Teams based in the following countries are not eligible to participate in the data sharing program:
+
+Austria Belgium Bulgaria Croatia
+
+Cyprus
+Czech Republic Denmark Estonia
+Finland France Germany Greece Hungary Ireland Italy Latvia Lithuania
+Luxembourg Malta Netherlands Poland Portugal Romania Slovakia Slovenia Spain Sweden Iceland Liechtenstein Norway
+United Kingdom

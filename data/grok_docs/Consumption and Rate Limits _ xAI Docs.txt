@@ -1,0 +1,106 @@
+Documentation	Cookbook
+
+
+
+Getting Started
+Consumption and Rate Limits
+
+
+Each
+
+
+grok
+
+model has different rate limits. To check your team's rate limits, you can visit xAI Console
+
+Models Page.
+
+
+
+
+Basic unit to calculate consumption - Tokens
+
+Token is the base unit of prompt size for model inference and pricing purposes. It is consisted of one or more character(s)/symbol(s).
+
+When a Grok model handles your request, an input prompt will be decomposed into a list of tokens through a tokenizer. The model will then make inference based on the prompt tokens, and generate completion tokens. After the inference is completed, the completion tokens will be aggregated into a completion response sent back to you.
+
+You can use Tokenizer on xAI Console to visualize tokens and count total token counts for a given text prompt.
+
+
+
+Text tokens
+Tokens can be either of a whole word, or smaller chunks of character combinations. The more common a word is, the more likely it would be a whole token.
+
+For example, Flint is broken down into two tokens, while Michigan is a whole token.
+
+
+
+In another example, most words are tokens by themselves, but "drafter" is broken down into "dra" and "fter", and "postmaster" is broken down into "post" and "master".
+
+
+
+For a given text/image/etc. prompt or completion sequence, different tokenizers may break it down into different lengths of lists.
+
+Different Grok models may also share or use different tokenizers. Therefore, the same prompt/completion sequence may not have the same amount of tokens across different models.
+
+The token count in a prompt/completion sequence should be approximately linear to the sequence length.
+
+
+Image prompt tokens
+Each image prompt will take between 256 to 1792 tokens, depending on the size of the image. The image + text token count must be less than the overall context window of the model.
+
+
+Estimating consumption with tokenizer on xAI Console or through API
+
+
+On xAI Console, you can use the tokenizer page to estimate how many tokens your text prompt will consume. For example, the following message would consume 5 tokens (the actual consumption may vary because of additional special tokens added by the system).
+
+Message body:
+
+
+Tokenize result on Tokenizer page:
+
+
+
+You can also utilize the Tokenize Text API endpoint to tokenize the text, and count the output token array length.
+
+
+
+Hitting rate limits
+
+
+For each tier, there is a maximum amount of requests per minute. This is to ensure fair usage by all users of the system.
+
+
+Once your request frequency has reached the rate limit, you will receive error code
+
+
+429
+
+
+in response.
+
+
+You can either:
+
+Upgrade your team to higher tiers
+Change your consumption pattern to send less requests
+
+
+
+
+Checking token consumption
+
+
+In each completion response, there is a
+
+
+usage
+
+object detailing your prompt and completion token
+
+count. You might find it helpful to keep track of it, in order to avoid hitting rate limits or having cost surprises.
+
+
+You can also check with OpenAI or Anthropic SDKs. OpenAI SDK:
+
