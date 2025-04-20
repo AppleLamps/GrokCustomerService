@@ -1,0 +1,30 @@
+# fly.toml
+app = "grokcustomerservice"  # use your app name from Fly dashboard
+
+primary_region = "iad"  # or choose your closest region (e.g., ord, lax, sea)
+
+[build]
+# Use Dockerfile in the root (default)
+dockerfile = "Dockerfile"
+
+[env]
+PORT = "8000"
+
+[http_service]
+internal_port = 8000
+force_https = true
+auto_stop_machines = true
+auto_start_machines = true
+min_machines_running = 0
+
+[[services]]
+protocol = "tcp"
+internal_port = 8000
+
+  [[services.ports]]
+  handlers = ["http"]
+  port = 80
+
+  [[services.ports]]
+  handlers = ["tls", "http"]
+  port = 443
